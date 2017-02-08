@@ -17,6 +17,7 @@ class StartViewModel {
         userID.asObservable().subscribe(onNext: { (text) in
             print(text)
         }).addDisposableTo(DisposeBag())
+        ///
     }
     
 }
