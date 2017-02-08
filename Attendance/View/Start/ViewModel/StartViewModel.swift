@@ -11,13 +11,12 @@ import RxSwift
 
 class StartViewModel {
     
-    public var userID:Variable<String> = Variable("")
+    private let disposeBag = DisposeBag()
+    public let vbUserID:Variable<String> = Variable("")
+    public var obUserLogin:Observable<Void>!
     
-    init() {
-        userID.asObservable().subscribe(onNext: { (text) in
-            print(text)
-        }).addDisposableTo(DisposeBag())
-        ///
+    init(){
+        obUserLogin = Attendance().regiest(self.vbUserID.value)
     }
-    
+
 }

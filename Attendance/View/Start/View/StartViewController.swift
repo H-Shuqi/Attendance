@@ -13,10 +13,9 @@ import pop
 import RxSwift
 import RxCocoa
 
-class StartViewController : UIViewController {
+class StartViewController : UIViewController, UITextFieldDelegate {
     private let viewModel:StartViewModel = StartViewModel()
     
-    let btnInteraction:UIButton = UIButton()
     let tfUserID:UITextField = UITextField()
     
     let disposeBag = DisposeBag()
@@ -25,29 +24,28 @@ class StartViewController : UIViewController {
         self.view.addSubview(tfUserID)
         tfUserID.textAlignment = .center
         tfUserID.tintColor = UIColor.lightGray
+        tfUserID.returnKeyType = .join
         tfUserID.snp.makeConstraints { (make) in
             make.center.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.8)
             make.height.equalTo(40)
         }
-        
-        self.view.addSubview(btnInteraction)
-        btnInteraction.isHidden = true
-        btnInteraction.backgroundColor = UIColor.lightGray
-        btnInteraction.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-            make.width.equalToSuperview().multipliedBy(0.5)
-            make.height.equalTo(btnInteraction.snp.width)
-        }
-        
-        tfUserID.rx.text.orEmpty.bindTo(viewModel.userID).addDisposableTo(disposeBag)
+
+        tfUserID.rx.text.orEmpty.bindTo(viewModel.vbUserID).addDisposableTo(disposeBag)
+        //tfUserID.delegate = self
+        tfUserID.rx.controlEvent(.editingDidEndOnExit).flatMap {
+            self.viewModel.obUserLogin
+        }.subscribe(onError: { (error) in
+            print(error)
+        }, onCompleted: {
+            print("成功")
+        }).addDisposableTo(disposeBag)
     }
     
     override func viewDidLayoutSubviews() {
         tfUserID.layer.borderColor = UIColor.lightGray.cgColor
-        tfUserID.layer.borderWidth = 1/UIScreen.main.scale/2
+        tfUserID.layer.borderWidth = 1//UIScreen.main.scale/2
         tfUserID.layer.cornerRadius = 6
-        btnInteraction.layer.cornerRadius = btnInteraction.bounds.width/2
     }
     
 }
