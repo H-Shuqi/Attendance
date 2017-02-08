@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05AC56021E4AC52C0016770D /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC56001E4AC52C0016770D /* RxBlocking.framework */; };
+		05AC56031E4AC52C0016770D /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC56001E4AC52C0016770D /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05AC56041E4AC52C0016770D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC56011E4AC52C0016770D /* RxCocoa.framework */; };
+		05AC56051E4AC52C0016770D /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC56011E4AC52C0016770D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05B892071E2929DE006DC662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B891FB1E2929DE006DC662 /* AppDelegate.swift */; };
 		05B892091E2929DE006DC662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B891FE1E2929DE006DC662 /* LaunchScreen.storyboard */; };
 		05B892101E292A6E006DC662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B8920E1E292A6E006DC662 /* Assets.xcassets */; };
@@ -37,9 +41,11 @@
 			files = (
 				05C00A481E2A00D30001D67D /* pop.framework in Embed Frameworks */,
 				05C00A461E2A00D30001D67D /* Alamofire.framework in Embed Frameworks */,
+				05AC56051E4AC52C0016770D /* RxCocoa.framework in Embed Frameworks */,
 				05E64DB21E30B57200516D36 /* RxSwift.framework in Embed Frameworks */,
 				05E64DA91E2F504900516D36 /* SnapKit.framework in Embed Frameworks */,
 				05C00A4E1E2A00D30001D67D /* SwiftyJSON.framework in Embed Frameworks */,
+				05AC56031E4AC52C0016770D /* RxBlocking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05AC56001E4AC52C0016770D /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		05AC56011E4AC52C0016770D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		05B891E31E29279B006DC662 /* Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B891FB1E2929DE006DC662 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05B891FF1E2929DE006DC662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,9 +79,11 @@
 			files = (
 				05C00A471E2A00D30001D67D /* pop.framework in Frameworks */,
 				05C00A451E2A00D30001D67D /* Alamofire.framework in Frameworks */,
+				05AC56041E4AC52C0016770D /* RxCocoa.framework in Frameworks */,
 				05E64DB11E30B57200516D36 /* RxSwift.framework in Frameworks */,
 				05E64DA81E2F504900516D36 /* SnapKit.framework in Frameworks */,
 				05C00A4D1E2A00D30001D67D /* SwiftyJSON.framework in Frameworks */,
+				05AC56021E4AC52C0016770D /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +190,8 @@
 		05C00A501E2A00E10001D67D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				05AC56001E4AC52C0016770D /* RxBlocking.framework */,
+				05AC56011E4AC52C0016770D /* RxCocoa.framework */,
 				05E64DB01E30B57200516D36 /* RxSwift.framework */,
 				05E64DA71E2F504900516D36 /* SnapKit.framework */,
 				05C00A401E2A00D30001D67D /* Alamofire.framework */,

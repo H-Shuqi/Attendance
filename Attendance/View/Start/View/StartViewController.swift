@@ -10,12 +10,16 @@ import Foundation
 import UIKit
 import SnapKit
 import pop
+import RxSwift
+import RxCocoa
 
 class StartViewController : UIViewController {
-    let viewModel:StartViewModel = StartViewModel()
+    private let viewModel:StartViewModel = StartViewModel()
     
     let btnInteraction:UIButton = UIButton()
     let tfUserID:UITextField = UITextField()
+    
+    let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         self.view.addSubview(tfUserID)
@@ -35,6 +39,8 @@ class StartViewController : UIViewController {
             make.width.equalToSuperview().multipliedBy(0.5)
             make.height.equalTo(btnInteraction.snp.width)
         }
+        
+        tfUserID.rx.text.orEmpty.bindTo(viewModel.userID).addDisposableTo(disposeBag)
     }
     
     override func viewDidLayoutSubviews() {
@@ -43,6 +49,5 @@ class StartViewController : UIViewController {
         tfUserID.layer.cornerRadius = 6
         btnInteraction.layer.cornerRadius = btnInteraction.bounds.width/2
     }
-    
     
 }

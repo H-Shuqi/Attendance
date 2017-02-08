@@ -9,12 +9,14 @@
 import Foundation
 import RxSwift
 
-struct StartViewModel {
+class StartViewModel {
     
-    var userID:String!
+    public var userID:Variable<String> = Variable("")
     
     init() {
-        //Observable(userID)
+        userID.asObservable().subscribe(onNext: { (text) in
+            print(text)
+        }).addDisposableTo(DisposeBag())
     }
     
 }
