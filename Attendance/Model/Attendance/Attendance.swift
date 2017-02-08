@@ -24,21 +24,24 @@ open class Attendance {
     /// 获取用户权限字符串
     ///
     /// - Parameter userId: 用户账号
-    @discardableResult open func regiest(_ userId:String)  -> Observable<Result> {
+    @discardableResult open func regiest(_ userId:Variable<String>)  -> Observable<Result> {
         return Observable<Result>.create({ (observable) -> Disposable in
             HTTPRequest(NETWORK.COUNTABLE).cookies([
-                NETWORK.CHECK_USER:userId
+                NETWORK.CHECK_USER:userId.value
             ]).parameters([
                 "state":"corpId=wxdd81efc4e5de91c9,appId=5,whichPage=gotoRecord"
             ]).response { (response) in
                 let apollo = response.cookies["SESSION_USER_INFO_APOLLO"]
                 let userJson = response.cookies["SESSION_USER_INFO_JSON"]
-                NETWORK.Apollo = apollo
-                NETWORK.UserJSON = userJson
-                observable.onNext(Result(apollo: apollo!,userJSON: userJson!))
-            }.progress({ (progress) in
-                print("请求进度: \(progress?.completedUnitCount)")
-            }).error { (error) in
+                if apollo == nil || userJson == nil {
+                    observable.onError(HError(-10, "数据为空"))
+                }else{
+                    NETWORK.Apollo = apollo
+                    NETWORK.UserJSON = userJson
+                    observable.onNext(Result(apollo: apollo!,userJSON: userJson!))
+                    observable.onCompleted()
+                }
+            }.error { (error) in
                 observable.onError(error)
             }
             

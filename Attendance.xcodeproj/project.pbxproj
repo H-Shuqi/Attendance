@@ -30,6 +30,8 @@
 		05E64DAF1E309C5600516D36 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E64DAE1E309C5600516D36 /* StartViewModel.swift */; };
 		05E64DB11E30B57200516D36 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E64DB01E30B57200516D36 /* RxSwift.framework */; };
 		05E64DB21E30B57200516D36 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05E64DB01E30B57200516D36 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05EBA1661E4B43AE009A6846 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EBA1651E4B43AE009A6846 /* Error.swift */; };
+		05EBA1681E4B5F7E009A6846 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EBA1671E4B5F7E009A6846 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +72,8 @@
 		05E64DAC1E309B3E00516D36 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		05E64DAE1E309C5600516D36 /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		05E64DB01E30B57200516D36 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		05EBA1651E4B43AE009A6846 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		05EBA1671E4B5F7E009A6846 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 			children = (
 				05C00A531E2A022F0001D67D /* HNetworkConfig.swift */,
 				05C00A511E2A01370001D67D /* HTTPRequest.swift */,
+				05EBA1651E4B43AE009A6846 /* Error.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				05E64DAC1E309B3E00516D36 /* StartViewController.swift */,
+				05EBA1671E4B5F7E009A6846 /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,8 +308,10 @@
 				05E64DAD1E309B3E00516D36 /* StartViewController.swift in Sources */,
 				05E64DAF1E309C5600516D36 /* StartViewModel.swift in Sources */,
 				05C00A541E2A022F0001D67D /* HNetworkConfig.swift in Sources */,
+				05EBA1681E4B5F7E009A6846 /* HomeViewController.swift in Sources */,
 				05C00A521E2A01370001D67D /* HTTPRequest.swift in Sources */,
 				05C00A571E2A1D690001D67D /* Attendance.swift in Sources */,
+				05EBA1661E4B43AE009A6846 /* Error.swift in Sources */,
 				05B892071E2929DE006DC662 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

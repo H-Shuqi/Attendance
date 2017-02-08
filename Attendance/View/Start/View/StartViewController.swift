@@ -32,13 +32,14 @@ class StartViewController : UIViewController, UITextFieldDelegate {
         }
 
         tfUserID.rx.text.orEmpty.bindTo(viewModel.vbUserID).addDisposableTo(disposeBag)
-        //tfUserID.delegate = self
         tfUserID.rx.controlEvent(.editingDidEndOnExit).flatMap {
             self.viewModel.obUserLogin
-        }.subscribe(onError: { (error) in
-            print(error)
+        }.subscribe(onNext: { result in
+            print("请求成功 :\(result)")
+        }, onError: { (error) in
+            print("请求失败 : \((error as! HError).localizedDescription)")
         }, onCompleted: {
-            print("成功")
+            print("完成")
         }).addDisposableTo(disposeBag)
     }
     

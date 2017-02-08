@@ -123,7 +123,7 @@ open class HTTPRequest : NSObject {
                 completionHandler(HTTPResponse(afResponse))
             } else {
                 if(self.errorHandler != nil){
-                    self.errorHandler!(afResponse.error ?? NSError(domain:"网络异常",code:-10))
+                    self.errorHandler!(afResponse.error ?? HError(-10, "网络异常"))
                 }
             }
         }

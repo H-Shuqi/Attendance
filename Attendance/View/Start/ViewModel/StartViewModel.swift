@@ -13,10 +13,10 @@ class StartViewModel {
     
     private let disposeBag = DisposeBag()
     public let vbUserID:Variable<String> = Variable("")
-    public var obUserLogin:Observable<Void>!
+    public var obUserLogin:Observable<Result>!
     
     init(){
-        obUserLogin = Attendance().regiest(self.vbUserID.value)
+        obUserLogin = Attendance().regiest(self.vbUserID)
     }
 
 }
