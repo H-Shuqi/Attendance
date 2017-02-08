@@ -1,0 +1,9 @@
+github "ReactiveX/RxSwift"
+
+github "Alamofire/Alamofire" ~> 4.2.0
+
+github "SwiftyJSON/SwiftyJSON"
+
+github "facebook/pop" ~> 1.0.9
+
+github "SnapKit/SnapKit" ~> 3.1.2
