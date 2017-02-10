@@ -21,7 +21,7 @@ private extension String {
 
 /// HTTP请求对象
 open class HTTPRequest : NSObject {
-    public typealias ErrorHandler = (Error!) -> Swift.Void
+    public typealias ErrorHandler = (HError!) -> Swift.Void
     public typealias ProgressHandler = (Progress!)->Void
     
     public typealias HTTPMethod = Alamofire.HTTPMethod
@@ -123,7 +123,7 @@ open class HTTPRequest : NSObject {
                 completionHandler(HTTPResponse(afResponse))
             } else {
                 if(self.errorHandler != nil){
-                    self.errorHandler!(afResponse.error ?? HError(-10, "网络异常"))
+                    self.errorHandler!(HError(-10, afResponse.error.debugDescription))
                 }
             }
         }

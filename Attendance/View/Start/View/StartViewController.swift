@@ -35,11 +35,10 @@ class StartViewController : UIViewController, UITextFieldDelegate {
         tfUserID.rx.controlEvent(.editingDidEndOnExit).flatMap {
             self.viewModel.obUserLogin
         }.subscribe(onNext: { result in
-            print("请求成功 :\(result)")
+            UIApplication.shared.keyWindow!.rootViewController = HNavigationController(rootViewController: HomeViewController())
+            UIApplication.shared.keyWindow!.makeKeyAndVisible()
         }, onError: { (error) in
             print("请求失败 : \((error as! HError).localizedDescription)")
-        }, onCompleted: {
-            print("完成")
         }).addDisposableTo(disposeBag)
     }
     

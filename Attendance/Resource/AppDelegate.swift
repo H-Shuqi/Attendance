@@ -16,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame:UIScreen.main.bounds)
         window!.backgroundColor = UIColor.white
-        self.window!.rootViewController = StartViewController()
+        let rootNavC:UIViewController!
+        if User.sharedInstance.userId == nil {
+            rootNavC = StartViewController()
+        }else{
+            rootNavC = HNavigationController(rootViewController: HomeViewController())
+        }
+        
+        self.window!.rootViewController = rootNavC
         self.window!.makeKeyAndVisible()
         return true
     }

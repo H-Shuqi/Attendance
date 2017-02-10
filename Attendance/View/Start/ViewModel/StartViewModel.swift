@@ -10,10 +10,9 @@ import Foundation
 import RxSwift
 
 class StartViewModel {
-    
     private let disposeBag = DisposeBag()
     public let vbUserID:Variable<String> = Variable("")
-    public var obUserLogin:Observable<Result>!
+    public var obUserLogin:Observable<LimitResult>!
     
     init(){
         obUserLogin = Attendance().regiest(self.vbUserID)

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		051670871E4D6511006ED1A4 /* Digiface Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 051670861E4D6511006ED1A4 /* Digiface Regular.ttf */; };
+		051670891E4D6ADE006ED1A4 /* HNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051670881E4D6ADE006ED1A4 /* HNavigationController.swift */; };
+		05A337101E4BFDD900BDB0D6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A3370F1E4BFDD900BDB0D6 /* Models.swift */; };
+		05A337121E4C207A00BDB0D6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A337111E4C207A00BDB0D6 /* HomeViewModel.swift */; };
+		05A337141E4C4D0100BDB0D6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A337131E4C4D0100BDB0D6 /* Theme.swift */; };
+		05A337161E4C6F9100BDB0D6 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A337151E4C6F9100BDB0D6 /* ControlView.swift */; };
+		05A337181E4C733700BDB0D6 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A337171E4C733700BDB0D6 /* ClockView.swift */; };
+		05A3371A1E4C73DC00BDB0D6 /* ClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A337191E4C73DC00BDB0D6 /* ClockViewModel.swift */; };
 		05AC56021E4AC52C0016770D /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC56001E4AC52C0016770D /* RxBlocking.framework */; };
 		05AC56031E4AC52C0016770D /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC56001E4AC52C0016770D /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05AC56041E4AC52C0016770D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC56011E4AC52C0016770D /* RxCocoa.framework */; };
@@ -30,7 +38,7 @@
 		05E64DAF1E309C5600516D36 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E64DAE1E309C5600516D36 /* StartViewModel.swift */; };
 		05E64DB11E30B57200516D36 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E64DB01E30B57200516D36 /* RxSwift.framework */; };
 		05E64DB21E30B57200516D36 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05E64DB01E30B57200516D36 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		05EBA1661E4B43AE009A6846 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EBA1651E4B43AE009A6846 /* Error.swift */; };
+		05EBA1661E4B43AE009A6846 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EBA1651E4B43AE009A6846 /* Errors.swift */; };
 		05EBA1681E4B5F7E009A6846 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EBA1671E4B5F7E009A6846 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +63,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		051670861E4D6511006ED1A4 /* Digiface Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digiface Regular.ttf"; sourceTree = "<group>"; };
+		051670881E4D6ADE006ED1A4 /* HNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNavigationController.swift; sourceTree = "<group>"; };
+		05A3370F1E4BFDD900BDB0D6 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		05A337111E4C207A00BDB0D6 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		05A337131E4C4D0100BDB0D6 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		05A337151E4C6F9100BDB0D6 /* ControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		05A337171E4C733700BDB0D6 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		05A337191E4C73DC00BDB0D6 /* ClockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockViewModel.swift; sourceTree = "<group>"; };
 		05AC56001E4AC52C0016770D /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		05AC56011E4AC52C0016770D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		05B891E31E29279B006DC662 /* Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +88,7 @@
 		05E64DAC1E309B3E00516D36 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		05E64DAE1E309C5600516D36 /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		05E64DB01E30B57200516D36 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		05EBA1651E4B43AE009A6846 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		05EBA1651E4B43AE009A6846 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		05EBA1671E4B5F7E009A6846 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		051670831E4D53F8006ED1A4 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				051670861E4D6511006ED1A4 /* Digiface Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		05489D651E2B62D500177928 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +175,7 @@
 			children = (
 				05C00A531E2A022F0001D67D /* HNetworkConfig.swift */,
 				05C00A511E2A01370001D67D /* HTTPRequest.swift */,
-				05EBA1651E4B43AE009A6846 /* Error.swift */,
+				05EBA1651E4B43AE009A6846 /* Errors.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -159,6 +183,7 @@
 		05B891FA1E2929DE006DC662 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				051670831E4D53F8006ED1A4 /* Font */,
 				05B8920D1E292A6E006DC662 /* Images */,
 				05B891FD1E2929DE006DC662 /* Config */,
 				05B891FB1E2929DE006DC662 /* AppDelegate.swift */,
@@ -210,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				05C00A561E2A1D690001D67D /* Attendance.swift */,
+				05A3370F1E4BFDD900BDB0D6 /* Models.swift */,
 			);
 			path = Attendance;
 			sourceTree = "<group>";
@@ -217,8 +243,12 @@
 		05E64DAA1E309B2C00516D36 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				05A337131E4C4D0100BDB0D6 /* Theme.swift */,
 				05E64DAC1E309B3E00516D36 /* StartViewController.swift */,
 				05EBA1671E4B5F7E009A6846 /* HomeViewController.swift */,
+				05A337151E4C6F9100BDB0D6 /* ControlView.swift */,
+				05A337171E4C733700BDB0D6 /* ClockView.swift */,
+				051670881E4D6ADE006ED1A4 /* HNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				05E64DAE1E309C5600516D36 /* StartViewModel.swift */,
+				05A337111E4C207A00BDB0D6 /* HomeViewModel.swift */,
+				05A337191E4C73DC00BDB0D6 /* ClockViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -264,7 +296,7 @@
 				TargetAttributes = {
 					05B891E21E29279A006DC662 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = YC2XW6QJAX;
+						DevelopmentTeam = S7MT8EBWU3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -294,6 +326,7 @@
 			files = (
 				05B892111E292A6E006DC662 /* Images.xcassets in Resources */,
 				05B892101E292A6E006DC662 /* Assets.xcassets in Resources */,
+				051670871E4D6511006ED1A4 /* Digiface Regular.ttf in Resources */,
 				05B892091E2929DE006DC662 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,10 +341,17 @@
 				05E64DAD1E309B3E00516D36 /* StartViewController.swift in Sources */,
 				05E64DAF1E309C5600516D36 /* StartViewModel.swift in Sources */,
 				05C00A541E2A022F0001D67D /* HNetworkConfig.swift in Sources */,
+				051670891E4D6ADE006ED1A4 /* HNavigationController.swift in Sources */,
+				05A3371A1E4C73DC00BDB0D6 /* ClockViewModel.swift in Sources */,
+				05A337121E4C207A00BDB0D6 /* HomeViewModel.swift in Sources */,
+				05A337161E4C6F9100BDB0D6 /* ControlView.swift in Sources */,
+				05A337141E4C4D0100BDB0D6 /* Theme.swift in Sources */,
 				05EBA1681E4B5F7E009A6846 /* HomeViewController.swift in Sources */,
 				05C00A521E2A01370001D67D /* HTTPRequest.swift in Sources */,
 				05C00A571E2A1D690001D67D /* Attendance.swift in Sources */,
-				05EBA1661E4B43AE009A6846 /* Error.swift in Sources */,
+				05A337101E4BFDD900BDB0D6 /* Models.swift in Sources */,
+				05A337181E4C733700BDB0D6 /* ClockView.swift in Sources */,
+				05EBA1661E4B43AE009A6846 /* Errors.swift in Sources */,
 				05B892071E2929DE006DC662 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YC2XW6QJAX;
+				DEVELOPMENT_TEAM = S7MT8EBWU3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Carthage/Build/iOS",
@@ -445,7 +485,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YC2XW6QJAX;
+				DEVELOPMENT_TEAM = S7MT8EBWU3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Carthage/Build/iOS",
